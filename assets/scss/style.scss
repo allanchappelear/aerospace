@@ -70,6 +70,16 @@ body {
 	  	
 	  		}
 	  	}
+	  	.image-satellite {
+	  		position: relative;
+	  		left: -20% !important;
+	  		top: 25vh !important;
+	  	}
+	  	.image-smoke {
+	  		position: relative;
+	  		left: 50% !important;
+	  		top: 25vh !important;
+	  	}
 		p {
 			font-size: 1.3em;
 			line-height: 1.5;
@@ -81,6 +91,12 @@ body {
 			top: 20vh;
 		}
 	}
-
-	
+}
+.sway {
+    animation: sway1 16s infinite;
+    transform-origin: 50% 100% 0;
+}
+@keyframes sway1 {
+    0%, 100%{ transform: rotate(-8deg);}
+    50%{ transform: rotate(6deg); }
 }
