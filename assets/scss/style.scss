@@ -92,11 +92,25 @@ body {
 		}
 	}
 }
-.sway {
-    animation: sway1 30s infinite;
-    transform-origin: 50% 100% 0;
+.scene {
+	overflow: hidden;
+	&.header {
+		height: 90vh;
+	}
 }
-@keyframes sway1 {
+.sat-float {
+    animation: satFloat 30s infinite;
+    transform-origin: 50% 80% 0;
+}
+.debris-float {
+    animation: debrisFloat 60s infinite;
+    transform-origin: 20% 20% 0;
+}
+@keyframes satFloat {
     0%, 100%{ transform: rotate(-8deg);}
     50%{ transform: rotate(6deg); }
+}
+@keyframes debrisFloat {
+    0%, 100%{ transform: rotate(-2deg);}
+    50%{ transform: rotate(3deg); }
 }
