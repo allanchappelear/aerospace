@@ -15,11 +15,14 @@ $proximaNovaThin: proxima-nova, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
 	font-family:  "Helvetica", "Helvetica Neue Light", "Helvetica Neue", 
   	Helvetica, Arial, "Lucida Grande", sans-serif;
+  	background: #222;
   	h1 {
   		font-weight: 800;
   		font-size: 5em;
@@ -51,15 +54,16 @@ body {
 	}
 	
 	#header1 {
-		height: 78vh;
+		height: 100vh;
 		width: 100%;
 		background-size: cover;
 		color: white;
 		text-align: center;
 		overflow: hidden;
+		position:fixed;
 		.image-bg {
-	  		width: 110vw;
-	  		height: 80vh;
+	  		width: 150vw;
+	  		height: 150vh;
 	  		left: -60px !important;
 	  		top: -60px !important;
 	  		img {
@@ -70,10 +74,9 @@ body {
 	  		}
 	  	}
 	  	.image-front {
-	  		width: 110vw;
-	  		height: 80vh;
-	  		left: -60px !important;
-	  		top: -30px !important;
+	  		width: 150vw;
+	  		height: 150vh;
+	  		
 	  		z-index: 10;
 	  		img {
 	  			position:relative;
@@ -104,17 +107,29 @@ body {
 			width: 75vw !important;
 			margin: 0 auto;
 			position: relative;
-			top: 30vh;
+			top: 25vh;
 		}
 	}
 }
-.section2 {
+#header2 {
 	background: #222;
 	color: #aaa;
 	padding: 5em 0;
-	margin-bottom: 5em;
+	margin-bottom: 0;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11;
 }
-.content {
+.content-main {
+	position: relative;
+	top: 200vh;
+	background: white;
+	padding-top: 5em;
+	z-index: 11;
 	h3 {
 		font-weight: 800;
 		letter-spacing: -.06em;
@@ -126,11 +141,16 @@ body {
 		font-style: normal;
 		font-size: 1.2em;
 	}
+	p.intro::first-letter {
+		font-size: 2.5em;
+		line-height: 1;
+  		//line-height: 70px; 
+	}
 }
 .scene {
 	overflow: hidden;
 	&.header {
-		height: 90vh;
+		height: 100vh;
 	}
 }
 .sat-float {
@@ -148,4 +168,10 @@ body {
 @keyframes debrisFloat {
     0%, 100%{ transform: rotate(-2deg);}
     50%{ transform: rotate(3deg); }
+}
+// Scrolling
+body[data-hijacking="on"] {
+	
+		overflow: hidden;
+
 }

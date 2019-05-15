@@ -23,16 +23,15 @@
   crossorigin="anonymous"></script>
 
 </head>
-<body data-hijacking="off" data-animation="none">
+<body>
 
-
-  <section data-relative-input="true" id="header1">
+  <section id="header1" class="cd-section visible">
     <div id="scene" class="scene header">
      <div class="image-bg" data-depth="0.1">
       <img src="./dist/images/4k-wallpaper-astro-astrology-1146134.jpg">
     </div>
-    <div class="image-front debris-float" data-depth="0.4">
-      <img src="./dist/images/space-junk.png">
+    <div class="image-front" data-depth="0.4">
+      <img src="./dist/images/space-junk.png" class="debris-float">
     </div>
     <div class="image-satellite" data-depth="0.2">
       <img src="./dist/images/satellite.png" class="sat-float">
@@ -51,15 +50,15 @@
       </div>
     </div>
   </section>
-  <section class="section2">
-    <div class="container">
+  <section id="header2" class="cd-section">
+    <div class="container d-flex justify-content-center align-items-center">
       <h3>Decades of space travel have resulted in a large amount of space debris that can be harmful to today’s satellites. Aerospace is addressing the issue of space debris and space traffic management by developing tools for analyzing potential collisions, studying reentry breakups, and modeling debris objects in space.</h3>
     </div>
   </section>
-  <section class="content">
+  <section class="content-main">
     <div class="container">
       <div class="col-md-8 offset-md-2">
-      <p>The launch of Sputnik on Oct. 4, 1957, marked the beginning of an intense space race that led to decades of rocket and satellite launches, which eventually resulted in a large amount of space debris. Space debris is anything in orbit that is man-made and is no longer in use. It consists of old, inactive satellites; rocket stages; and other discarded hardware.  Smaller pieces of space debris include fragments of vehicles that exploded or collided and bits of insulation and paint that have come off of space vehicles. Generally, the smaller the debris, the more there is of it. This abundance of debris created the need for a military space surveillance to maintain a catalog of all Earth-orbiting objects — active payloads, satellites and debris — along with detailed information about trajectory and point of origin.</p>
+      <p class="intro">The launch of Sputnik on Oct. 4, 1957</large>, marked the beginning of an intense space race that led to decades of rocket and satellite launches, which eventually resulted in a large amount of space debris. Space debris is anything in orbit that is man-made and is no longer in use. It consists of old, inactive satellites; rocket stages; and other discarded hardware.  Smaller pieces of space debris include fragments of vehicles that exploded or collided and bits of insulation and paint that have come off of space vehicles. Generally, the smaller the debris, the more there is of it. This abundance of debris created the need for a military space surveillance to maintain a catalog of all Earth-orbiting objects — active payloads, satellites and debris — along with detailed information about trajectory and point of origin.</p>
 
       <p>This “space object catalog” or Satellite Catalog (SATCAT) is maintained by  Joint Combined Space Operations Center (CSpOC) at Vandenberg Air Force Base, part of U.S. Strategic Command. One of the missions of CSpOC is to detect, track and identify all objects in Earth orbit in addition to monitoring the International Space Station (ISS) and other NASA satellites for collisions. Also located at Vandenberg Air Force Base is the The U.S. Air Force’s 18th Space Control Squadron, which operates the Space Surveillance Network (SSN), which oversees radar and optical sensors at various sites around the world. These sensors observe and track objects that are larger than a softball in low Earth orbit (LEO) and basketball-sized objects or larger, in higher, geosynchronous orbits. The sensors can determine which orbit the objects are in, and that information is used to predict close approaches, reentries and the probability of a collision.  </p>
 
@@ -103,15 +102,17 @@
             <p>In their efforts to get to the moon, the first space pioneers probably never imagined that space debris and protecting our space environment would ever be an issue.  Nevertheless, this is the situation in which space operators today live.  There are international guidelines for getting rid of old satellites and rockets from the Inter-Agency Space Debris Coordination Committee (IADC). The problem is that it can be difficult and expensive to eliminate old spacecraft, especially if the satellite or rocket was not designed for disposal. Furthermore, having satellites and rockets dispose of themselves will not work for objects that are already in orbit and are uncontrollable. Therefore, the work of CORDS, along with a robust Space Surveillance Network and the space situational awareness that it enables, are the cornerstones to ensuring a safe operational space environment for future generations.</p>
           </div>
         </section>
-
+        
         <!-- JS -->
    <!--<script href="vendor/parallax-master/src/parallax.js"></script>
     <script href="vendor/Parallax-img-scroll-master/parallaxImg.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="./vendor/pushin.js-master/js/pushin.js"></script>
-    <script src="./vendor/Parallax-img-scroll-master/parallaxImg.js"></script>
-    <script src="./vendor/page-scroll-effect-master/js/parallaxImg.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@4.0.0/dist/simpleParallax.min.js"></script>
 
+    <script src="./vendor/page-scroll-effects-master/js/modernizr.js"></script> <!-- Modernizr -->
     <script src="./dist/js/main.js"></script>
 
 
