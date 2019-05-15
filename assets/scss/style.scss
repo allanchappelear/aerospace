@@ -123,6 +123,9 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 11;
+	.container {
+		height: 75vh !important;
+	}
 }
 .content-main {
 	position: relative;
@@ -130,6 +133,7 @@ body {
 	background: white;
 	padding-top: 5em;
 	z-index: 11;
+
 	h3 {
 		font-weight: 800;
 		letter-spacing: -.06em;

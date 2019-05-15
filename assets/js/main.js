@@ -20,15 +20,7 @@ jQuery(document).ready(function($){
 	} else {
 		$('#header2').fadeOut();
 	}
-	if(scroll > (windowHeight * 2)) {
-		$('#header2').css({
-			//position: 'relative'
-		})
-	} else {
-		$('#header2').css({
-			position: 'fixed'
-		})
-	}
+	
 	});
 
 
