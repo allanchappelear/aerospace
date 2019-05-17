@@ -182,7 +182,11 @@ body {
 	background: white;
 	padding-top: 5em;
 	z-index: 11;
-
+	h2 {
+		font-weight: 800;
+		letter-spacing: -.06em;
+		font-size: 3.2em;
+	}
 	h3 {
 		font-weight: 800;
 		letter-spacing: -.06em;
@@ -259,12 +263,30 @@ body {
   		float: right;
   		margin-right: -25%;
   		margin-left: 2em;
+  		-webkit-transform: rotate3d(0,1,0,-30deg) translate(10%, 0%);
+  		transform: rotate3d(0,1,0,-30deg) translate(10%, 0%);
+  		-webkit-transition: opacity .25s ease-in-out,-webkit-transform .35s;
+  		transition: opacity .55s ease-in-out,-webkit-transform .55s;
+  		transition: transform .55s,opacity .55s ease-in-out;
+  		transition: transform .55s,opacity .55s ease-in-out,-webkit-transform .35s;
+  		opacity: 0;
+  		z-index: 0;
+  		&.visible {
+  			opacity: 1;
+  			-webkit-transform: rotate3d(0,1,0,0deg) translate(0, 0%);
+  			transform: rotate3d(0,1,0,0deg) translate(0, 0%);
+  			z-index: 1;   	
+  		}
   		&.text {
 
   		}
   	}
   }
   #pq1 {
+  	background: url(/dist/images/Space-debris-A-metal-ball-001.jpg);
+  	background-position: center center;
+  }
+  #pq2 {
   	background: url(/dist/images/Space-debris-A-metal-ball-001.jpg);
   	background-position: center center;
   }
@@ -284,24 +306,39 @@ body {
 
 // Scroll Magic
 .reveal {
-		opacity: 0;
-		-webkit-transform: scale(0.9);
-			 -moz-transform: scale(0.9);
-				-ms-transform: scale(0.9);
-				 -o-transform: scale(0.9);
-						transform: scale(0.9);
-		-webkit-transition: all 1s ease-in-out;
-			 -moz-transition: all 1s ease-in-out;
-				-ms-transition: all 1s ease-in-out;
-				 -o-transition: all 1s ease-in-out;
-						transition: all 1s ease-in-out;
-	}
-	.reveal1.visible {
-		opacity: 1;
-		-webkit-transform: none;
-			 -moz-transform: none;
-				-ms-transform: none;
-				 -o-transform: none;
-						transform: none;
-	}
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+.reveal1.visible {
+	opacity: 1;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
 
+#carousel {
+	height: 40vh;
+	width: 98vw;
+	background: #333;
+	position: relative;
+	left: -23vw;
+	color: #fff;
+	margin-top: 5em;
+	.carousel-item {
+		padding: 8em 10em;
+		h3 {
+			font-size: 5em;
+		}
+	}
+}

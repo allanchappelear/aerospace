@@ -14,13 +14,9 @@
  $('#header1').hide();
  $('#header2').hide();
  jQuery(document).ready(function($){
- 	var parallaxSettings = {
-        initialOpacity: 1, //from 0 to 1, e.g. 0.34 is a valid value. 0 = transparent, 1 = Opaque
-        opacitySpeed: 0.1, //values from 0.01 to 1 -> 0.01: slowly appears on screen; 1: appears as soon as the user scrolls 1px
-        pageLoader: true
-      };
 
-      parallaxImgScroll(parallaxSettings);
+
+
  	$('#header1').fadeIn();
  	$(window).scroll(function() {
  		var scroll = $(window).scrollTop();
@@ -44,11 +40,14 @@
 
  	// For animations
  	$(window).on('resize scroll', function() {
- 		if ($('.pullquote').isInViewport()) {
- 			$('.pullquote').addClass('visible');
+ 		if ($('#pq1').isInViewport()) {
+ 			$('#pq1').addClass('visible');
  		} else {
         // do something else
     }
+    if ($('#pq2').isInViewport()) {
+ 			$('#pq2').addClass('visible');
+ 		} 
     if ($('#video1').isInViewport()) {
     	$("audio#audio1")[0].play();
 
