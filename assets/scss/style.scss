@@ -12,39 +12,39 @@ $darkBlue: #2e394d;
 $proximaNovaThin: proxima-nova, sans-serif;
 
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family:  "Helvetica", "Helvetica Neue Light", "Helvetica Neue", 
-  	Helvetica, Arial, "Lucida Grande", sans-serif;
-  	background: #222;
-  	h1 {
-  		font-weight: 800;
-  		font-size: 5em;
-  		letter-spacing: -3px;
-  	}
-  	.serif {
+	Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: #222;
+	h1 {
+		font-weight: 800;
+		font-size: 5em;
+		letter-spacing: -3px;
+	}
+	.serif {
 		font-family: adobe-garamond-pro,serif;
 		font-weight: 400;
 		font-style: normal;
 		font-size: 1.2em;
-  	}
-  	.typewriter {
+	}
+	.typewriter {
 		font-family: itc-american-typewriter,serif;
 		font-weight: 300;
 		font-style: normal;
-  	}
-  	#mainHead {
-  	} 
-  	#logo {
-  		width: 70px;
-  		padding: 15px;
-  	}
+	}
+	#mainHead {
+	} 
+	#logo {
+		width: 70px;
+		padding: 15px;
+	}
 	section {
 		position: relative;
 	}
@@ -62,43 +62,43 @@ body {
 		overflow: hidden;
 		position:fixed;
 		.image-bg {
-	  		width: 150vw;
-	  		height: 150vh;
-	  		left: -60px !important;
-	  		top: -60px !important;
-	  		img {
-	  			position:relative;
-	  		    object-fit: contain;
-	    		width: 100%;
-	  	
-	  		}
-	  	}
-	  	.image-front {
-	  		width: 150vw;
-	  		height: 150vh;
-	  		
-	  		z-index: 10;
-	  		img {
-	  			position:relative;
-	  		    object-fit: contain;
-	    		width: 100%;
-	  	
-	  		}
-	  	}
-	  	.image-satellite {
-	  		position: relative;
-	  		left: -10% !important;
-	  		top: 25vh !important;
-	  		z-index: 10;
-	  		img {
-	  			width: 450px;
-	  		}
-	  	}
-	  	.image-smoke {
-	  		position: relative;
-	  		left: 50% !important;
-	  		top: 25vh !important;
-	  	}
+			width: 150vw;
+			height: 150vh;
+			left: -60px !important;
+			top: -60px !important;
+			img {
+				position:relative;
+				object-fit: contain;
+				width: 100%;
+
+			}
+		}
+		.image-front {
+			width: 150vw;
+			height: 150vh;
+
+			z-index: 10;
+			img {
+				position:relative;
+				object-fit: contain;
+				width: 100%;
+
+			}
+		}
+		.image-satellite {
+			position: relative;
+			left: -10% !important;
+			top: 25vh !important;
+			z-index: 10;
+			img {
+				width: 450px;
+			}
+		}
+		.image-smoke {
+			position: relative;
+			left: 50% !important;
+			top: 25vh !important;
+		}
 		p {
 			font-size: 1.3em;
 			line-height: 1.5;
@@ -143,39 +143,165 @@ body {
 		font-family: adobe-garamond-pro,serif;
 		font-weight: 400;
 		font-style: normal;
+		font-size: 1.3em;
+		line-height: 1.5;
+	}
+	p.intro::first-letter {
+		font-size: 2.5em;
+		line-height: 1;
+  		//line-height: 70px; 
+  	}
+  }
+
+  #video1 {
+  	position: relative;
+  	width: 98.5vw;
+  	margin-left: -24.5vw;
+  	right: 0; 
+  	min-height: 450px;
+  	margin-bottom: 5em;
+  	margin-top: 5em;
+	transition: transform .5s; /* Animation */
+	transform: scale(.9);
+	opacity: 0;
+	-webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
+	filter: blur(20px);
+	&.visible {
+		transform: scale(1);
+		opacity: 1;
+	}
+	-webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+	filter: blur(0px);
+}
+
+
+
+.content-2 {
+	position: relative;
+	top: 200vh;
+	background: white;
+	padding-top: 5em;
+	z-index: 11;
+
+	h3 {
+		font-weight: 800;
+		letter-spacing: -.06em;
+		font-size: 2.8em;
+	}
+	p {
+		font-family: adobe-garamond-pro,serif;
+		font-weight: 400;
+		font-style: normal;
 		font-size: 1.2em;
 	}
 	p.intro::first-letter {
 		font-size: 2.5em;
 		line-height: 1;
   		//line-height: 70px; 
-	}
-}
-.scene {
-	overflow: hidden;
-	&.header {
-		height: 100vh;
-	}
-}
-.sat-float {
-    animation: satFloat 30s infinite;
-    transform-origin: 50% 80% 0;
-}
-.debris-float {
-    animation: debrisFloat 60s infinite;
-    transform-origin: 20% 20% 0;
-}
-@keyframes satFloat {
-    0%, 100%{ transform: rotate(-8deg);}
-    50%{ transform: rotate(6deg); }
-}
-@keyframes debrisFloat {
-    0%, 100%{ transform: rotate(-2deg);}
-    50%{ transform: rotate(3deg); }
-}
-// Scrolling
-body[data-hijacking="on"] {
-	
-		overflow: hidden;
+  	}
+  }
+  .parallax-container {
+  	min-height: 400px;
+  	background: transparent;
+  }
+  .scene {
+  	overflow: hidden;
+  	&.header {
+  		height: 100vh;
+  	}
+  }
+  .sat-float {
+  	animation: satFloat 30s infinite;
+  	transform-origin: 50% 80% 0;
+  }
+  .debris-float {
+  	animation: debrisFloat 60s infinite;
+  	transform-origin: 20% 20% 0;
+  }
+  @keyframes satFloat {
+  	0%, 100%{ transform: rotate(-8deg);}
+  	50%{ transform: rotate(6deg); }
+  }
+  @keyframes debrisFloat {
+  	0%, 100%{ transform: rotate(-2deg);}
+  	50%{ transform: rotate(3deg); }
+  }
+  .pullquote {
+  	width: 85%;
+  	height: 350px;
+  	-webkit-transform: rotate3d(0,1,0,-30deg) translate(-10%, 0%);
+  	transform: rotate3d(0,1,0,-30deg) translate(-10%, 0%);
+  	-webkit-transition: opacity .25s ease-in-out,-webkit-transform .35s;
+  	transition: opacity .55s ease-in-out,-webkit-transform .55s;
+  	transition: transform .55s,opacity .55s ease-in-out;
+  	transition: transform .55s,opacity .55s ease-in-out,-webkit-transform .35s;
+  	opacity: 0;
+  	z-index: 0;
+  	&.visible {
+  		opacity: 1;
+  		-webkit-transform: rotate3d(0,1,0,0deg) translate(0, 0%);
+  		transform: rotate3d(0,1,0,0deg) translate(0, 0%);
+  		z-index: 1;   	
+  	}
+  	&.left {
+  		float: left;
+  		margin-left: -25%;
+  		margin-right: 2em;
+  	}
+  	p {
+  		color: white;
+  		font-family:  "Helvetica", "Helvetica Neue";
+  		font-size: .8em;
+  		font-weight: 700;
+  		padding: 3em;
+  	}
+  	&.right {
+  		float: right;
+  		margin-right: -25%;
+  		margin-left: 2em;
+  		&.text {
 
+  		}
+  	}
+  }
+  #pq1 {
+  	background: url(/dist/images/Space-debris-A-metal-ball-001.jpg);
+  	background-position: center center;
+  }
+
+// Scrolling
+
+.parallax-slide {
+	.caption {
+		color: white;
+		font-family:  "Helvetica", "Helvetica Neue Light", "Helvetica Neue";
+		p {
+			font-family:  "Helvetica", "Helvetica Neue Light", "Helvetica Neue";
+			font-weight: 700;
+		}
+	}
 }
+
+// Scroll Magic
+.reveal {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	.reveal1.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+
