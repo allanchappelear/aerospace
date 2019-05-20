@@ -269,6 +269,10 @@ body {
   	animation: debrisFloat 60s infinite;
   	transform-origin: 20% 20% 0;
   }
+  .stars-float {
+  	animation: starsFloat 40s infinite;
+  	transform-origin: 30% 30% 0;
+  }
   @keyframes satFloat {
   	0%, 100%{ transform: rotate(-8deg);}
   	50%{ transform: rotate(6deg); }
@@ -276,6 +280,10 @@ body {
   @keyframes debrisFloat {
   	0%, 100%{ transform: rotate(-2deg);}
   	50%{ transform: rotate(3deg); }
+  }
+  @keyframes starsFloat {
+  	0%, 100%{ transform: rotate(-2deg);}
+  	50%{ transform: rotate(-3deg); }
   }
   .pullquote {
   	width: 85%;
