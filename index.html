@@ -22,6 +22,10 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
+
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+
 </head>
 <body>
 
@@ -74,6 +78,11 @@
             </video>
 
 
+          <div class="debris-scroll left parallax" id="junk1">
+            <img src="./dist/images/junk1.png">
+          </div>
+
+
             <h3>The Problem of Space Debris</h3>
             <p>Space debris affects everyone especially since almost everything we do in our modern way of life uses satellite technology. Space debris adds to the cost of operating satellites because if debris destroys a satellite, it may take years and hundreds of millions of dollars to restore that satellite's service. Even tiny debris objects can inflict grave harm to critical sensors and spacecraft components. A one-centimeter-sized object is considered lethal if it hits a satellite and an object down to one millimeter can critically damage a satellite if it hits a critical component.  In addition, the growth in space debris will make orbit operations and space flight more hazardous, difficult and more costly if frequent maneuvers are required to avoid debris. A satellite would have to carry extra fuel for these extra maneuvers and would likely need to shield critical areas from collisions with small debris.</p>
             <div id="pq1" class="pullquote left">
@@ -82,86 +91,210 @@
 
             <p>The U.S. military is currently tracking about 20,000 objects and has cataloged more than 40,000 objects over the years. Space debris numbers are estimated to rise to over 100,000 objects in the coming years. Most space debris objects are too small to be tracked but large enough to damage spacecraft. It is estimated that there are hundreds of thousands of objects that could be fatal or catastrophic to a space mission and millions of objects that are capable of causing damage.</p>
 
-           
+            <canvas id="debris-years"></canvas>
 
 
-              <p><small>A small piece of space debris traveling at 17,000 miles per hour carries a lot of energy. This photo depicts damage to the Hubble telescope caused by debris. Photo Credit: NASA</small></p>
 
-              <h3>Complications of Space Debris Removal</h3>
-              <p>Unfortunately, we can’t just vacuum or sweep up space debris into a space garbage truck. To remove space debris, particularly the large and more dangerous objects, we have to get close to it and maintain the same speed as each object. We then must somehow attach to it, and move it into a lower orbit or reenter it directly into the atmosphere, where it will burn up upon reentry. If the object is a rocket stage with propellant still on board, there is an explosion risk, which is why astronauts never perform this task.</p>
 
-                 <div id="pq2" class="pullquote right">
-              <p>Once a pressure sphere on the upper stage of a rocket; now a piece of space debris recovered in South Africa. Photo: Argus/Enver</p>
-            </div>  <p>There is also the issue of property rights; you can’t grab a satellite or rocket that belongs to another country without their permission. There is no easy way to control the small-but-dangerous objects that are not well tracked or not tracked at all. They have more kinetic energy than bullets, and they are moving ten times faster. It is hard to catch a bullet, especially if you don’t want to create more junk while doing it.</p>
+            <div id="carousel-perspective" class="carousel slide" data-ride="carousel">
+                <div class="space stars1"></div>
+                <div class="space stars2"></div>
+                <div class="space stars3"></div>
 
-              <p>Increased space debris traffic also equals increased collision risk for launch vehicles and satellites on orbit. If the SSN predicts a collision between a cataloged object and a known operational satellite, they usually attempt to notify the owner/operator. Debris can’t be moved, but if the other object is a maneuverable satellite, the object may be able to move out of the way in time to avoid a collision. Most satellite operators require hours or days to plan and execute a collision avoidance maneuver. Other nations use CSpOC data as well as their own tracking data to protect their satellites. Therefore, high-accuracy assessment and prediction tools are essential for reducing risk to current systems and future launches.</p>
-
-              <h3>CORDS Leads Space Traffic Management</h3>
-              <p>Aerospace’s Center for Orbital and Reentry Debris Studies(CORDS) is addressing the issue of space debris and space traffic management by developing tools and techniques that will analyze potential collision scenarios, study reentry breakups of upper stages and spacecraft and model debris objects in space. These efforts are critical given the predicted population growth in launch efforts and LEO satellite constellations.</p>
-
-              <p>CORDS-developed tools encompass a vast array of operations, from predicting possible collisions during launch and on orbit, to predicting hazards to spacecraft after collisions in space, simulating the breakup of reentering debris, estimating the survivability of satellite components reentering Earth’s atmosphere and determining risk to life and property. CORDS provides information on when a reentry might occur, and Aerospace collects and analyses material that survived reentry. This expertise has been used to support the needs of Air Force, NRO, NASA, NOAA, FAA and other customers.</p>
-
-              <small>The first Reentry Breakup Recorder (REBR) successfully recorded data as it plunged through the atmosphere aboard a disintegrating Japanese HTV-2 spacecraft.</small>
-
-              <h3>Reentry Breakup Recorder Records Reentry Data</h3>
-              <p>To measure the effects of atmospheric reentry on space objects, CORDS developed the Reentry Breakup Recorder (REBR)—a small, lightweight, self-contained, autonomous, survivable and locatable data-recording device. Attached to a host vehicle, which is generally a spacecraft, this device “sleeps” until the point of atmospheric reentry, when it wakes up to record temperature, acceleration, rotational rate, and other data, including the subsequent breakup of the space hardware due to atmospheric drag, aerodynamic heating, and loads. REBR is released during breakup and protected by its heat shield, survives reentry and “phones home” recorded data via the Iridium system. Five REBR devices have been launched to date, providing innumerable insights into the atmospheric reentry and breakup of spacecraft.</p>
-
-              <h3>Space Traffic Management Vital for Collision Avoidance </h3>
-              <p>The single most important contribution to managing space debris is to avoid making more debris. Nowadays, satellite operators try to reduce space debris from recently launched satellites and rocket bodies by carefully designing them to prevent explosions, reentering them, or moving them to disposal orbits — essentially a space junkyard — when their mission is over. Another way of preventing space debris is to predict and help prevent catastrophic collisions between existing objects. For nearly two decades, CORDS has pioneered new techniques and processes to provide probability-based analysis for mission assurance launch collision avoidance for all national security space launches. The CORDS team has worked to improve the accuracy of the space object catalog and how to apply this knowledge to achieve effective collision avoidance. Aerospace’s Debris Analysis Response Team provides realtime debris risk assessment for on-orbit collisions and breakups. </p>
-
-              {TABLE}
-              <small>A summary of collision energies of various sized particles. Notice that tiny space debris can be deadly and are typically not trackable.</small>
-              <h3>The Importance of Space Debris Management</h3>
-              <p>In their efforts to get to the moon, the first space pioneers probably never imagined that space debris and protecting our space environment would ever be an issue.  Nevertheless, this is the situation in which space operators today live.  There are international guidelines for getting rid of old satellites and rockets from the Inter-Agency Space Debris Coordination Committee (IADC). The problem is that it can be difficult and expensive to eliminate old spacecraft, especially if the satellite or rocket was not designed for disposal. Furthermore, having satellites and rockets dispose of themselves will not work for objects that are already in orbit and are uncontrollable. Therefore, the work of CORDS, along with a robust Space Surveillance Network and the space situational awareness that it enables, are the cornerstones to ensuring a safe operational space environment for future generations.</p>
-
-              <h2>Putting it in perspective</h2>
-              <h4>How the likelihood of getting hit with space debris ranks to other ‘events’ </h4>
-              <div id="carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <h4>Being audited by the IRS</h4><h3>1 in 100</h3>
-                  </div>
-                  <div class="carousel-item">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="..." alt="Third slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-perspective" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-perspective" data-slide-to="1"></li>
+                <li data-target="#carousel-perspective" data-slide-to="2"></li>
+                <li data-target="#carousel-perspective" data-slide-to="3"></li>
+                <li data-target="#carousel-perspective" data-slide-to="4"></li>
+                <li data-target="#carousel-perspective" data-slide-to="5"></li>
+                <li data-target="#carousel-perspective" data-slide-to="6"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="conatiner">
+                    <div class="d-flex align-items-center">
+                      <h2>Putting it into Perspective</h2>
+                      <p>See the likelihood of getting hit with space debris</p>
+                    </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
+                <div class="carousel-item">
 
-            </div>
-          </section>
+                  <div class="container">
+                    <div class="d-flex align-items-center">
+                      <div class="caption col-md-8">
+                        <h2><small>Being audited by the IRS</small>1 in 100</h2>
+                      </div>
+                      <div class="col-md-4">
+                       <svg version="1.1"
+                       id="Layer_1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 62 56.5"
+                       style="enable-background:new 0 0 62 56.5;" xml:space="preserve">
+                       <style type="text/css">
+                       .st0{fill:#FFFFFF;}
+                     </style>
+                     <path id="path12" class="st0" d="M54.4,11c-0.6-1-6.7-3.9-15.6-5.7c-3.6,4-3.6,5.6-3.7,6.2c-0.1,0.6,1.2,2.3,2.5,4
+                     c2.4,3.2,3.1,3.8,3.5,4.8c0.7,1.7-0.5,5.9-1.3,9.6c0-0.1-2.2-8.1-3.1-13.2c-0.1-0.5,0-0.7,0-0.7c-5.4-0.5-9.1-0.7-9.7,2.1
+                     c-2.5,0-3.7,0.7-4,1.2c-0.6,1.1,0.1,3.3,0.6,4.4c0.4-0.9,2.5-0.7,3.2-0.7c0.4,0.1,0.4,0.2,0.5,0.5v10.7h-6.5l-5.5,15.1
+                     c2.5,1.2,5.3,2.2,7,2.2c1.7,0,5.9-2.2,6.5-2.2c0.5,0,4.7,2.2,6.4,2.2s4.4-0.9,7-2.2l-5.5-15.1c0,0-5.7,0-6.5,0c0-2.4,0-7.8,0-10.3
+                     c-0.1-0.6-0.4-0.9-0.6-0.9l3.2-0.1c-0.5-1.8-1.1-3.2-2-3.3c0.2-0.4,0.5-0.6,0.8-0.9h-2.5c0.2-1.3,3.5-0.9,4.9-0.7
+                     c1.4,7.2,4.2,17,4.3,17.1s2.4,1,2.6,1.1c1.3-2.9,3.4-11.5,3.5-13.6c1.7,0.6,1.1,2.8,0.7,5.1c-1.9,11.7-3.5,15.3-3.8,17.5
+                     c1.7-0.4,2.6-0.7,2.9-0.9c0.2-0.4,1-2.3,1.7-4.5c1-3.2,2.5-11.2,2.5-14.4c0-0.7-0.7-1.6-1.8-2.1c0,0,0.6-1,0.8-1.7
+                     c0.4-0.7,0.7-2.2,0.7-2.2c0.7,0.2,1.2,0.5,1.3,1.2c0.4,3.1,0.2,3.3-0.2,9c0,1.7-0.7,5.4-1.3,9.2c-1.2,6.8-2.4,9.8-2.4,10.9
+                     c1.8-0.6,3.2-1.1,3.4-1.3c0.1-0.2,1.4-3.5,2.4-8.6c0.4-2.2,0.6-4.3,1-6.5c0.5-2.9,0.6-6,0.6-8.4c0-3.7,0.5-3.7-2.3-5.1
+                     c1.1-2.9,0.8-4.9,0.6-5.5c-0.5-1-1-1-3.4-0.9c0.8,0.9,0.6,2.4,0.4,3.4c-0.5-0.4-0.2-1.1-2.8-1c-0.4-4.2-1.2-4.6-1.2-4.8
+                     c-0.4-0.5-2.5-0.2-3.1,0c0.5,0.4,1.4,3.5,1,4.9c-0.2-0.4-3.8-4.5-3.6-5.3c0.2-0.5,0.5-1,1.7-2.4c4.2,0.9,11.3,3.5,11.8,4.3
+                     c0.4,1,0.8,2.1,1.1,3.7c0.4,2.4,1.1,8.1,0.7,16.7c-0.4,9-1.6,14-1.4,13.8c1.3-0.4,3.4-2.4,3.6-2.9c0.6-1.5,0.8-6.7,1-11.5
+                     c-0.1-4.7-0.6-10.7-0.8-13C55.5,13.7,55.1,12.2,54.4,11z M22.2,48.4c-1.3,0-3.2-0.2-3.2-0.2l3.2-9.5l3,9.5
+                     C25.2,48.1,23.4,48.4,22.2,48.4z M38.3,48.1c0,0-1.9,0.2-3.2,0.2c-1.1,0-3-0.2-3-0.2l3-9.5L38.3,48.1z M30,40.8v-3.7h2.8l-4.2,11.8
+                     l-4.2-11.7h2.8v2.6c0,0,0,0.2,0.1,0.2c0.4,0.2,0.5,0.2,0.5,0.2L30,40.8z M30.3,21.5h-4.8c-0.4-1.2,0-1.5,1.1-1.6
+                     C28.5,19.8,30.2,19.8,30.3,21.5z M44,16.3c1.7-0.2,1,2.9,0.5,4.2c-0.7-1.5-1.2-2.4-2.3-3.8C42.8,16.4,43.3,16.4,44,16.3z"/>
+                     <path id="path14" class="st0" d="M12.7,42.7c0.8-1,3.8-4,4.3-5.7c0.5-2,1-6.8,1-7.9c0,0-3,2.1-4.5,3.7c-0.7,0.7-1.6,2-1.6,2
+                     c-0.4-1.7,0.1-3.7,0.8-4.8c1-1.7,4.6-4.8,5.1-6.1c0.8-2.1,0.7-3.9,1.3-6.1c-2.4,0.9-5.4,2.7-6.9,4.3c-0.1-2.4,0.6-4.2,2.2-5.4
+                     c2.3-1.8,5.4-2.8,7.3-3.4c1.7-0.5,4.5-1,5.8-1.7C30,10.4,32.4,6.8,33,5c-0.8,0-3.8-0.1-6.7,1c-1.1,0.5-1.6,1.5-2,2.3
+                     c-0.5,0.7-1,1.5-1.4,2.1c-1.2,1.8-2.6,2.7-4.4,3.2c0-0.1,1.2-0.9,2-2.7c0.7-1.6,1.6-4.6,1.6-4.9c-1.6,0.2-2.5,0.7-4.2,1.3
+                     c-1.7,0.7-2.3,1.5-2.6,2.2c-1.2,1.8-0.8,7-3.2,8.9c0.1-2.7,0.7-5.6-0.2-8.9c-4.8,2-5.8,3.7-5.4,5.7c0.5,2.8,3.5,4,4.8,6.4
+                     c0.5,0.7,0.6,1.7,0.6,1.7c0.1,0-1,1.3-0.6,4c0,0-1-2-1.9-3.2c-1.4-1.8-4.2-4.8-4.2-4.8c-0.6,7.5,0.4,9,0.7,9.6c1,1.6,4.4,4,5.2,5.6
+                     c0.4,0.7,0.5,1,0.5,1c0.1,0.2-0.7,1.2-0.6,2.6c0.1,0.5,0.2,1,0.4,1.7c0,0-1.1-1.6-2.5-3.2c-1.2-1.5-3.7-3.3-3.8-3.3
+                     c-0.1,0.9,0.4,5,0.5,5.7c0.2,2.1,0.4,4,2.2,5.9c1.4,1.5,6.3,3.5,7.3,3.9c0,0-0.2-1-0.7-2.3C13.5,45,12.7,42.7,12.7,42.7z"/>
+                   </svg>
 
-          <!-- JS -->
 
-          <script src="./vendor/parallax-img-scroll-master/demo/js/jquery.js"></script>
-          <!-- For Parallax Header -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="carousel-item">
+ <div class="container">
+  <div class="d-flex align-items-center">
+    <div class="caption col-md-8">
+      <h2><small>Being struck and killed by lightning</small>1 in 1.4 million</h2>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="./dist/images/icons/lightning.svg" class="icon">
+    </div>
+  </div>
+</div>
+</div>
+<div class="carousel-item">
+ <div class="container">
+  <div class="d-flex align-items-center">
+    <div class="caption col-md-8">
+      <h2><small>Being drafted by the NBA</small>1 in 6,864,000</h2>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="./dist/images/icons/basketball.svg" class="icon">
+    </div>
+  </div>
+</div>
+</div>
+<div class="carousel-item">
+ <div class="container">
+  <div class="d-flex align-items-center">
+    <div class="caption col-md-8">
+      <h2><small>Winning the Powerball</small>1 in 292 million</h2>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="./dist/images/icons/powerball.svg" class="icon">
+    </div>
+  </div>
+</div>
+</div>
+<div class="carousel-item">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="caption col-md-8">
+        <h2><small>Killed by a hurricane</small>1 in 6 million </h2>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="./dist/images/icons/hurricane.svg" class="icon">
+      </div>
+    </div>
+  </div>
+</div>
 
-          <!-- Modernizr -->
-          <script src="./vendor/page-scroll-effects-master/js/modernizr.js"></script>
+<div class="carousel-item">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="caption col-md-8">
+        <h2><small>Getting hit with space debris</small> 1 in 292 trillion</h2>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="./dist/images/icons/satellite.svg" class="icon">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-          <!--<script src="./vendor/parallax-img-scroll-master/demo/js/jquery.nicescroll.min.js"></script>-->
-          <script src="./vendor/parallax-img-scroll-master/demo/js/parallaxImg.js"></script>
+
+<a class="carousel-control-prev" href="#carousel-perspective" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carousel-perspective" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
 
 
-          <script src="./vendor/scroll-magic/scrollmagic/minified/ScrollMagic.min.js"></script>
+
+<h3>Complications of Space Debris Removal</h3>
+<p>Unfortunately, we can’t just vacuum or sweep up space debris into a space garbage truck. To remove space debris, particularly the large and more dangerous objects, we have to get close to it and maintain the same speed as each object. We then must somehow attach to it, and move it into a lower orbit or reenter it directly into the atmosphere, where it will burn up upon reentry. If the object is a rocket stage with propellant still on board, there is an explosion risk, which is why astronauts never perform this task.</p>
+
+<div id="pq2" class="pullquote right">
+  <p>A small piece of space debris traveling at 17,000 miles per hour carries a lot of energy. This photo depicts damage to the Hubble telescope caused by debris. Photo Credit: NASA
+</p>
+</div>  <p>There is also the issue of property rights; you can’t grab a satellite or rocket that belongs to another country without their permission. There is no easy way to control the small-but-dangerous objects that are not well tracked or not tracked at all. They have more kinetic energy than bullets, and they are moving ten times faster. It is hard to catch a bullet, especially if you don’t want to create more junk while doing it.</p>
+
+<p>Increased space debris traffic also equals increased collision risk for launch vehicles and satellites on orbit. If the SSN predicts a collision between a cataloged object and a known operational satellite, they usually attempt to notify the owner/operator. Debris can’t be moved, but if the other object is a maneuverable satellite, the object may be able to move out of the way in time to avoid a collision. Most satellite operators require hours or days to plan and execute a collision avoidance maneuver. Other nations use CSpOC data as well as their own tracking data to protect their satellites. Therefore, high-accuracy assessment and prediction tools are essential for reducing risk to current systems and future launches.</p>
+
+<h3>CORDS Leads Space Traffic Management</h3>
+<p>Aerospace’s Center for Orbital and Reentry Debris Studies(CORDS) is addressing the issue of space debris and space traffic management by developing tools and techniques that will analyze potential collision scenarios, study reentry breakups of upper stages and spacecraft and model debris objects in space. These efforts are critical given the predicted population growth in launch efforts and LEO satellite constellations.</p>
+
+<p>CORDS-developed tools encompass a vast array of operations, from predicting possible collisions during launch and on orbit, to predicting hazards to spacecraft after collisions in space, simulating the breakup of reentering debris, estimating the survivability of satellite components reentering Earth’s atmosphere and determining risk to life and property. CORDS provides information on when a reentry might occur, and Aerospace collects and analyses material that survived reentry. This expertise has been used to support the needs of Air Force, NRO, NASA, NOAA, FAA and other customers.</p>
+
+<small>The first Reentry Breakup Recorder (REBR) successfully recorded data as it plunged through the atmosphere aboard a disintegrating Japanese HTV-2 spacecraft.</small>
+
+<h3>Reentry Breakup Recorder Records Reentry Data</h3>
+<p>To measure the effects of atmospheric reentry on space objects, CORDS developed the Reentry Breakup Recorder (REBR)—a small, lightweight, self-contained, autonomous, survivable and locatable data-recording device. Attached to a host vehicle, which is generally a spacecraft, this device “sleeps” until the point of atmospheric reentry, when it wakes up to record temperature, acceleration, rotational rate, and other data, including the subsequent breakup of the space hardware due to atmospheric drag, aerodynamic heating, and loads. REBR is released during breakup and protected by its heat shield, survives reentry and “phones home” recorded data via the Iridium system. Five REBR devices have been launched to date, providing innumerable insights into the atmospheric reentry and breakup of spacecraft.</p>
+
+<h3>Space Traffic Management Vital for Collision Avoidance </h3>
+<p>The single most important contribution to managing space debris is to avoid making more debris. Nowadays, satellite operators try to reduce space debris from recently launched satellites and rocket bodies by carefully designing them to prevent explosions, reentering them, or moving them to disposal orbits — essentially a space junkyard — when their mission is over. Another way of preventing space debris is to predict and help prevent catastrophic collisions between existing objects. For nearly two decades, CORDS has pioneered new techniques and processes to provide probability-based analysis for mission assurance launch collision avoidance for all national security space launches. The CORDS team has worked to improve the accuracy of the space object catalog and how to apply this knowledge to achieve effective collision avoidance. Aerospace’s Debris Analysis Response Team provides realtime debris risk assessment for on-orbit collisions and breakups. </p>
+
+{TABLE}
+<small>A summary of collision energies of various sized particles. Notice that tiny space debris can be deadly and are typically not trackable.</small>
+<h3>The Importance of Space Debris Management</h3>
+<p>In their efforts to get to the moon, the first space pioneers probably never imagined that space debris and protecting our space environment would ever be an issue.  Nevertheless, this is the situation in which space operators today live.  There are international guidelines for getting rid of old satellites and rockets from the Inter-Agency Space Debris Coordination Committee (IADC). The problem is that it can be difficult and expensive to eliminate old spacecraft, especially if the satellite or rocket was not designed for disposal. Furthermore, having satellites and rockets dispose of themselves will not work for objects that are already in orbit and are uncontrollable. Therefore, the work of CORDS, along with a robust Space Surveillance Network and the space situational awareness that it enables, are the cornerstones to ensuring a safe operational space environment for future generations.</p>
 
 
-          <script src="./dist/js/main.js"></script>
+</div>
+</section>
+
+<!-- JS -->
+
+<script src="./vendor/parallax-img-scroll-master/demo/js/jquery.js"></script>
+<!-- For Parallax Header -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+<!-- Modernizr -->
+<script src="./vendor/page-scroll-effects-master/js/modernizr.js"></script>
+
+<!--<script src="./vendor/parallax-img-scroll-master/demo/js/jquery.nicescroll.min.js"></script>-->
+<script src="./vendor/parallax-img-scroll-master/demo/js/parallaxImg.js"></script>
+
+<script src="./vendor/scroll-magic/scrollmagic/minified/ScrollMagic.min.js"></script>
+
+<script src="./dist/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 
 
 
 
-        </body>
+</body>
 
-        </html>
+</html>

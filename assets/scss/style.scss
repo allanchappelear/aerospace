@@ -8,6 +8,7 @@ $pink: #e0195e;
 $green: #aacf37;
 $lightBlue: #00afbd;
 $darkBlue: #2e394d;
+$purple: #401286;
 
 $proximaNovaThin: proxima-nova, sans-serif;
 
@@ -235,10 +236,10 @@ body {
   	height: 350px;
   	-webkit-transform: rotate3d(0,1,0,-30deg) translate(-10%, 0%);
   	transform: rotate3d(0,1,0,-30deg) translate(-10%, 0%);
-  	-webkit-transition: opacity .25s ease-in-out,-webkit-transform .35s;
-  	transition: opacity .55s ease-in-out,-webkit-transform .55s;
-  	transition: transform .55s,opacity .55s ease-in-out;
-  	transition: transform .55s,opacity .55s ease-in-out,-webkit-transform .35s;
+  	-webkit-transition: opacity .25s ease-in-out,-webkit-transform 1s;
+  	transition: opacity 1s ease-in-out,-webkit-transform 1s;
+  	transition: transform 1s,opacity 1s ease-in-out;
+  	transition: transform 1s,opacity 1s ease-in-out,-webkit-transform 1s;
   	opacity: 0;
   	z-index: 0;
   	&.visible {
@@ -287,7 +288,7 @@ body {
   	background-position: center center;
   }
   #pq2 {
-  	background: url(../../dist/images/Space-debris-A-metal-ball-001.jpg);
+  	background: url(../../dist/images/cords_hubble-telescope-damage.jpg);
   	background-position: center center;
   }
 
@@ -302,6 +303,13 @@ body {
 			font-weight: 700;
 		}
 	}
+}
+
+#carousel-perspective {
+	height: 300px;
+	width: 100%;
+	color: white;
+	background: #333;
 }
 
 // Scroll Magic
@@ -326,19 +334,204 @@ body {
 	-o-transform: none;
 	transform: none;
 }
-
-#carousel {
-	height: 40vh;
-	width: 98vw;
-	background: #333;
+.carousel-control-prev, .carousel-control-next {
+	border: 1px solid white;
+	width: 64px;
+	height: 64px;
+	top: 42%;
+}
+.carousel-control-prev {
+	left: 30px;
+}
+.carousel-control-next {	
+	right: 30px;
+}
+#carousel-perspective {
 	position: relative;
-	left: -23vw;
-	color: #fff;
+	width: 98.5vw;
+	margin-left: -24.5vw;
+	right: 0;
+	min-height: 550px;
+	margin-bottom: 5em;
 	margin-top: 5em;
+	transition: transform .5s;
+	background: radial-gradient(circle at bottom, navy 0, black 100%);
+		overflow: hidden;
+
 	.carousel-item {
 		padding: 8em 10em;
-		h3 {
-			font-size: 5em;
+		h2 {
+			font-size: 5.5em;
+			font-weight: 700;
+			letter-spacing: -2px;
+			& small {
+				font-size: .35em;
+				display: block;
+				//text-transform: uppercase;
+
+			}
+		}
+		img {
+			width: 100%;
+			position: relative;
+			margin-top: -25px;
+			margin: 0 auto;
 		}
 	}
 }
+.space {
+	background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 2px dotted transparentize($blue, .1);
+}	
+.stars1 {
+	animation: space 600s ease-out infinite;
+	background-image:
+	radial-gradient(
+		1px 1px at 25px 5px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		1px 1px at 50px 25px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		1px 1px at 125px 20px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		1.5px 1.5px at 50px 75px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		2px 2px at 15px 125px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		2.5px 2.5px at 110px 80px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		);
+}
+.stars2 {
+	animation: space 140s ease-out infinite;
+	background-image:
+	radial-gradient(
+		1px 1px at 75px 125px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		1px 1px at 100px 75px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		1.5px 1.5px at 199px 100px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		2px 2px at 20px 50px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		2.5px 2.5px at 100px 5px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		2.5px 2.5px at 5px 5px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		);
+}
+.stars3 {
+	animation: space 160s ease-out infinite;
+	background-image:
+	radial-gradient(
+		1px 1px at 10px 10px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		1px 1px at 150px 150px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		1.5px 1.5px at 60px 170px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		1.5px 1.5px at 175px 180px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		2px 2px at 195px 95px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		),
+	radial-gradient(
+		2.5px 2.5px at 95px 145px, 
+		white, 
+		rgba(255, 255, 255, 0)
+		);
+
+}
+
+@keyframes space {
+	40% {
+		opacity: 0.9;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 0.75;
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.video-fixed {
+	width: 100vw;
+	height: 100vh;
+	background: #333;
+	position: fixed;
+}
+.fixed-spacer {
+	height: 100vh;
+}
+.content-sub {
+	position: relative;
+	top: 100vh;
+}
+//Header nmiations
+//Slider 
+
+
+//Debris Scroll
+.debris-scroll {
+	position: absolute;
+	&.left {
+		left: -200px;
+		z-index: 10;
+		//top: 100vh;
+	}
+}
+
+
+
